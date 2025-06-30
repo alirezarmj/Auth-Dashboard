@@ -47,13 +47,13 @@ export default function DashboardPage() {
           Welcome to the Dashboard, {user.name.first} {user.name.last}!
         </h1>
         <div className={styles.userInfo}>
-          <img
+          <Image
             src={user.picture.thumbnail}
             alt="User profile picture"
             width={64}
             height={64}
             className={styles.avatar}
-            // priority // Important for above-the-fold images
+            priority // Important for above-the-fold images
           />
           <div>
             <p>Email: {user.email}</p>
